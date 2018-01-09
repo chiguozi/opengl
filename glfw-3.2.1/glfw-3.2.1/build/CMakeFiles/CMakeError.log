@@ -1,0 +1,482 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/5 13:25:13¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.43
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/5 13:25:14¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.40
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/5 13:27:54¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.43
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/5 13:27:54¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.39
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/5 14:28:02¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.44
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/5 14:28:03¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.40
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/6 10:27:35¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.72
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/6 10:27:36¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.41
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/6 10:33:33¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.48
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/6 10:33:34¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.44
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/6 10:33:51¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.47
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Microsoft (R) Éú³ÉÒıÇæ°æ±¾ 14.0.25420.1
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/1/6 10:33:52¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷ - Ê§°Ü¡£
+
+Éú³ÉÊ§°Ü¡£
+
+¡°G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê) (1) ->
+(Link Ä¿±ê) -> 
+  LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°ucrtd.lib¡± [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 ¸ö¾¯¸æ
+    1 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.42
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: G:/project/glfw-3.2.1/glfw-3.2.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_8134f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) ç”Ÿæˆå¼•æ“ç‰ˆæœ¬ 14.0.25420.1
+ç‰ˆæƒæ‰€æœ‰(C) Microsoft Corporationã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚
+
+ç”Ÿæˆå¯åŠ¨æ—¶é—´ä¸º 2018/1/6 14:40:13ã€‚
+èŠ‚ç‚¹ 1 ä¸Šçš„é¡¹ç›®â€œG:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8134f.vcxprojâ€(é»˜è®¤ç›®æ ‡)ã€‚
+PrepareForBuild:
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œcmTC_8134f.dir\Debug\â€ã€‚
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œG:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\â€ã€‚
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œcmTC_8134f.dir\Debug\cmTC_8134f.tlog\â€ã€‚
+InitializeBuildStatus:
+  æ­£åœ¨åˆ›å»ºâ€œcmTC_8134f.dir\Debug\cmTC_8134f.tlog\unsuccessfulbuildâ€ï¼Œå› ä¸ºå·²æŒ‡å®šâ€œAlwaysCreateâ€ã€‚
+ClCompile:
+  F:\Program Files (x86)\VC\bin\CL.exe /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8134f.dir\Debug\\" /Fd"cmTC_8134f.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  ç”¨äº x86 çš„ Microsoft (R) C/C++ ä¼˜åŒ–ç¼–è¯‘å™¨ 19.00.24215.1 ç‰ˆ
+  ç‰ˆæƒæ‰€æœ‰(C) Microsoft Corporationã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚
+  
+  cl /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8134f.dir\Debug\\" /Fd"cmTC_8134f.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: æ— æ³•æ‰“å¼€åŒ…æ‹¬æ–‡ä»¶: â€œpthread.hâ€: No such file or directory [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8134f.vcxproj]
+å·²å®Œæˆç”Ÿæˆé¡¹ç›®â€œG:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8134f.vcxprojâ€(é»˜è®¤ç›®æ ‡)çš„æ“ä½œ - å¤±è´¥ã€‚
+
+ç”Ÿæˆå¤±è´¥ã€‚
+
+â€œG:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8134f.vcxprojâ€(é»˜è®¤ç›®æ ‡) (1) ->
+(ClCompile ç›®æ ‡) -> 
+  G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: æ— æ³•æ‰“å¼€åŒ…æ‹¬æ–‡ä»¶: â€œpthread.hâ€: No such file or directory [G:\project\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8134f.vcxproj]
+
+    0 ä¸ªè­¦å‘Š
+    1 ä¸ªé”™è¯¯
+
+å·²ç”¨æ—¶é—´ 00:00:01.04
+
+
