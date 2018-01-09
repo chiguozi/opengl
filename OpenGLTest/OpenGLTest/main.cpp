@@ -2,6 +2,7 @@
 #include <GLFW/glfw3.h>
 
 void framebuffer_size_callback(GLFWwindow * window, int width, int height);
+void processInput(GLFWwindow *window);
 
 int main()
 {
@@ -30,12 +31,25 @@ int main()
 
 	while (!glfwWindowShouldClose(window))
 	{
+		processInput(window);
+
+		glClearColor(0.5f, 0.5f, 0.5f, 0.5f);
+		glClear(GL_COLOR_BUFFER_BIT);
+
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
 
 	glfwTerminate();
 	return 0;
+}
+
+void processInput(GLFWwindow *window)
+{
+	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+	{
+		glfwSetWindowShouldClose(window, true);
+	}
 }
 
 
