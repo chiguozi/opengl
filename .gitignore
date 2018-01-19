@@ -33,3 +33,13 @@
 *.opendb
 *.db
 *.log
+*.pdb
+*.idb
+*.tlog
+
+[Dd]ebug/
+[Rr]elease/
+[Rr]eleases/
+*.VC.db
+*.VC.VC.opendb
+
