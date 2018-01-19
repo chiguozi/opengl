@@ -1,10 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-void framebuffer_size_callback(GLFWwindow * window, int width, int height);
-void processInput(GLFWwindow *window);
+void framebuffer_size_callback_01(GLFWwindow * window, int width, int height);
+void processInput_01(GLFWwindow *window);
 
-int main()
+int main_1()
 {
 	//GLGW初始化
 	glfwInit();
@@ -30,13 +30,13 @@ int main()
 
 	glViewport(0, 0, 800, 600);
 
-	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback_01);
 
 
 	//函数在我们每次循环的开始前检查一次GLFW是否被要求退出，如果是的话该函数返回true然后游戏循环便结束了，之后为我们就可以关闭应用程序了
 	while (!glfwWindowShouldClose(window))
 	{
-		processInput(window);
+		processInput_01(window);
 
 		glClearColor(0.5f, 0.5f, 0.5f, 0.5f);
 		glClear(GL_COLOR_BUFFER_BIT);
@@ -51,7 +51,7 @@ int main()
 	return 0;
 }
 
-void processInput(GLFWwindow *window)
+void processInput_01(GLFWwindow *window)
 {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 	{
@@ -60,7 +60,7 @@ void processInput(GLFWwindow *window)
 }
 
 
-void framebuffer_size_callback(GLFWwindow * window, int width, int height)
+void framebuffer_size_callback_01(GLFWwindow * window, int width, int height)
 {
 	glViewport(0, 0, width, height);
 }
