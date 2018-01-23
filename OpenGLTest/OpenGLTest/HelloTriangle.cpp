@@ -19,7 +19,7 @@ const GLchar* fragmentShaderSource = "#version 330 core\n"
 "color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
 "}\n\0";
 
-int main_2()
+int main_02()
 {
 	//GLGW初始化
 	glfwInit();
@@ -99,7 +99,9 @@ int main_2()
 		0.5f, 0.5f, 0.0f,
 		0.5f, -0.5f, 0.0f,
 		-0.5f, -0.5f, 0.0f, // 左下角
-		-0.5f, 0.5f, 0.0f   // 左上角
+		//-0.5f, -0.5f, 0.0f,
+		-0.5f, 0.5f, 0.0f,   // 左上角
+		//0.5f, -1.0f, 0.0f,
 	};
 
 	GLint indices[] = {// 注意索引从0开始! 
@@ -142,7 +144,7 @@ int main_2()
 
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO);
-		//glDrawArrays(GL_TRIANGLES, 0, 3);
+		//glDrawArrays(GL_TRIANGLES, 0, 6);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 		//glBindVertexArray(0);
 
