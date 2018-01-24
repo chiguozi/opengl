@@ -118,6 +118,7 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="HelloTriangle.cpp" />
+    <ClCompile Include="HelloTriangle_test_02.cpp" />
     <ClCompile Include="HelloWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
