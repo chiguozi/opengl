@@ -27,5 +27,8 @@
     <ClCompile Include="HelloTriangle_test_02.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ShaderUniform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
