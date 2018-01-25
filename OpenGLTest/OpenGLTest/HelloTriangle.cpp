@@ -19,16 +19,16 @@ const GLchar* fragmentShaderSource = "#version 330 core\n"
 "color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
 "}\n\0";
 
-int main()
+int main_02()
 {
 	//GLGW初始化
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
+#ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // 此行用来给Mac OS X系统做兼容
-
+#endif
 	GLFWwindow* window = glfwCreateWindow(800, 600, "Learn", NULL, NULL);
 	if (window == NULL)
 	{
@@ -96,11 +96,20 @@ int main()
 
 	// 顶点输入
 	GLfloat vertices[] = {
-		-0.5f, -0.5f, 0.0f,
+		0.5f, 0.5f, 0.0f,
 		0.5f, -0.5f, 0.0f,
-		0.0f,  0.5f, 0.0f
+		-0.5f, -0.5f, 0.0f, // 左下角
+		//-0.5f, -0.5f, 0.0f,
+		-0.5f, 0.5f, 0.0f,   // 左上角
+		//0.5f, -1.0f, 0.0f,
 	};
 
+	GLint indices[] = {// 注意索引从0开始! 
+		0, 1, 3, // 第一个三角形
+		1, 2, 3  // 第二个三角形
+	};
+	// 设置为线框模式
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 	GLuint VAO;
 	glGenVertexArrays(1, &VAO);
@@ -111,13 +120,20 @@ int main()
 	// 0. 复制顶点数组到缓冲中供OpenGL使用
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+
+	GLuint EBO;
+	glGenBuffers(1, &EBO);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
 	//设置顶点属性指针
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 
 	//激活对象
-	glUseProgram(shaderProgram);
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	//glUseProgram(shaderProgram);
+	//glDrawArrays(GL_TRIANGLES, 0, 3);
 	//函数在我们每次循环的开始前检查一次GLFW是否被要求退出，如果是的话该函数返回true然后游戏循环便结束了，之后为我们就可以关闭应用程序了
 	while (!glfwWindowShouldClose(window))
 	{
@@ -128,8 +144,9 @@ int main()
 
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
-		glBindVertexArray(0);
+		//glDrawArrays(GL_TRIANGLES, 0, 6);
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		//glBindVertexArray(0);
 
 		//函数会交换颜色缓冲（它是一个储存着GLFW窗口每一个像素颜色的大缓冲），它在这一迭代中被用来绘制，并且将会作为输出显示在屏幕上。
 		glfwSwapBuffers(window);
@@ -139,6 +156,7 @@ int main()
 
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
+	glDeleteBuffers(1, &EBO);
 
 	glfwTerminate();
 	return 0;
