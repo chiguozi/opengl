@@ -9,16 +9,16 @@ int main()
 	const GLchar* vertexShaderSource =
 		"#version 330 core\n"
 		"layout(location = 0) in vec3 position;\n"
-		" in vec4 verColor;\n"
-		"uniform vec4 inputColor;"
+		"layout(location = 1) in vec4 verColor;\n"
+		//"//uniform vec4 inputColor;"
 		"out vec4 outColor;"
 		"void main()\n"
-		"{\n outColor = inputColor;\n  gl_Position = vec4(position, 1.0f);  }\n";
+		"{\n outColor = verColor;\n  gl_Position = vec4(position, 1.0f);  }\n";
 
 	const GLchar* fragShaderSource =
 		"#version 330 core \n"
 		"out vec4 fragColor;\n"
-		"uniform vec4 inputColor;\n"
+		//"//uniform vec4 inputColor;\n"
 		"in vec4 outColor;\n"
 		"void main() { fragColor = outColor;}";
 
@@ -93,11 +93,11 @@ int main()
 
 	// 顶点输入
 	GLfloat vertices[] = {
-		0.5f, 0.5f, 0.0f,
-		0.5f, -0.5f, 0.0f,
-		-0.5f, -0.5f, 0.0f, // 左下角
+		0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0,
+		0.5f, -0.5f, 0.0f, 0, 1.0f, 0,
+		-0.5f, -0.5f, 0.0f, 0, 0, 1, // 左下角
 		//-0.5f, -0.5f, 0.0f,
-		-0.5f, 0.5f, 0.0f,   // 左上角
+		-0.5f, 0.5f, 0.0f, 0.5f, 0.5f, 0.5f,   // 左上角
 		//0.5f, -1.0f, 0.0f,
 	};
 
@@ -123,8 +123,12 @@ int main()
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
 	//设置顶点属性指针
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
+
+	//绑定颜色
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+	glEnableVertexAttribArray(1);
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -132,12 +136,12 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT);
 		glUseProgram(shaderProgram);
 
-		float timeValue = glfwGetTime();
+		/*float timeValue = glfwGetTime();
 		float greenValue = sin(timeValue) / 2.0 + 0.5f;
 		float redValue = cos(timeValue) / 2.0 + 0.5f;
 
 		int vertexColorLoaction = glGetUniformLocation(shaderProgram, "inputColor");
-		glUniform4f(vertexColorLoaction, redValue, greenValue, 0.0f, 1.0f);
+		glUniform4f(vertexColorLoaction, redValue, greenValue, 0.0f, 1.0f);*/
 		
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
