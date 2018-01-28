@@ -46,3 +46,4 @@
 *.vcxproj
 *.vcxproj.filters
 
+/OpenGLTest/OpenGLTest/OpenGLTest.vcxproj.user
