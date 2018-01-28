@@ -43,3 +43,6 @@
 *.VC.db
 *.VC.VC.opendb
 
+*.vcxproj
+*.vcxproj.filters
+
