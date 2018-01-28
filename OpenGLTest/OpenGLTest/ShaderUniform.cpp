@@ -12,15 +12,17 @@ int main()
 		"layout(location = 1) in vec4 verColor;\n"
 		//"//uniform vec4 inputColor;"
 		"out vec4 outColor;"
+		"out vec4 outposition;"
 		"void main()\n"
-		"{\n outColor = verColor;\n  gl_Position = vec4(position, 1.0f);  }\n";
+		"{\n outColor = verColor;\n  gl_Position = vec4(position, 1.0f); outposition = vec4(position, 1.0f);   }\n";
 
 	const GLchar* fragShaderSource =
 		"#version 330 core \n"
 		"out vec4 fragColor;\n"
 		//"//uniform vec4 inputColor;\n"
 		"in vec4 outColor;\n"
-		"void main() { fragColor = outColor;}";
+		"in vec4 outposition;"
+		"void main() { fragColor = outposition;}";
 
 	//GLGW≥ı ºªØ
 	glfwInit();
