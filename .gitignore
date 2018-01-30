@@ -37,6 +37,9 @@
 *.idb
 *.tlog
 
+*.user
+*.suo
+
 [Dd]ebug/
 [Rr]elease/
 [Rr]eleases/
