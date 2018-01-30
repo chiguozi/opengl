@@ -3,7 +3,7 @@
 #include "iostream"
 
 
-int main()
+int main_03()
 {
 	//uniform 可以放在vertex 也可以放在frag中 
 	const GLchar* vertexShaderSource =
