@@ -4,7 +4,7 @@
 #include "iostream"
 #include "Shader.h"
 
-int main()
+int main_04()
 {
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -136,7 +136,7 @@ int main()
 			outShader.setFloat("radio", radio);
 		}
 
-		if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_RELEASE)
+		if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
 		{
 			radio -= 0.01;
 			if (radio < 0)
