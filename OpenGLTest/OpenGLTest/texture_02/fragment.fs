@@ -9,7 +9,6 @@ uniform float radio;
 
 void main()
 {
-
 	fragColor = mix(texture(ourTexture, texCoord), texture(ourTexture1, vec2(texCoord.x * 2, texCoord.y * 2)), radio);
 	//fragColor = mix(texture(ourTexture, texCoord), texture(ourTexture1, texCoord), 0.5)* vec4(outColor, 1.0);
 }
