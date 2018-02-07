@@ -26,9 +26,6 @@ GLFWwindow*  MyGlCreateWindow(char* name, int width, int height)
 		return NULL;
 	}
 	glfwMakeContextCurrent(window);
-
-
-	glViewport(0, 0, 800, 600);
 	return window;
 };
 

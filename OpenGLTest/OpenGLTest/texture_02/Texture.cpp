@@ -33,10 +33,10 @@ int main_04()
 
 	GLfloat vertices[] = {
 		//     ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
-		0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   2.0f, 2.0f,   // 右上
-		0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   2.0f, 0.0f,   // 右下
-		-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
-		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 2.0f    // 左上
+		0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   1.0f, 1.0f,   // 右上
+		0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 1.0f,   1.0f, 0.0f,   // 右下
+		-0.5f, -0.5f, 0.0f,   1.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
+		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // 左上
 	};
 
 	GLint indices[] = {
@@ -128,21 +128,21 @@ int main_04()
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_RELEASE)
-		{
-			radio += 0.01;
-			if (radio > 1)
-				radio = 1;
-			outShader.setFloat("radio", radio);
-		}
+		/*	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_RELEASE)
+			{
+				radio += 0.01;
+				if (radio > 1)
+					radio = 1;
+				outShader.setFloat("radio", radio);
+			}
 
-		if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-		{
-			radio -= 0.01;
-			if (radio < 0)
-				radio = 0;
-			outShader.setFloat("radio", radio);
-		}
+			if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+			{
+				radio -= 0.01;
+				if (radio < 0)
+					radio = 0;
+				outShader.setFloat("radio", radio);
+			}*/
 
 
 		glActiveTexture(GL_TEXTURE0);
