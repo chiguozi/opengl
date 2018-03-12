@@ -164,4 +164,5 @@ int main_04()
 		glfwPollEvents();
 	}
 
+	return 0;
 }

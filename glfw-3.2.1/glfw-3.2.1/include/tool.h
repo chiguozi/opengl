@@ -1,4 +1,3 @@
-#pragma once
 #ifndef  TOOL_H
 #define TOOL_H
 #include "glad/glad.h"

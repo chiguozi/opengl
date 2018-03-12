@@ -5,15 +5,14 @@
 #include "glm/gtc/type_ptr.hpp"
 #include "../stb_image.h"
 
-int main_05()
+int main()
 {
 	MyGlInitGLFW(3);
-	GLFWwindow* window = MyGlCreateWindow("transform", 800, 600);
+	GLFWwindow* window = MyGlCreateWindow("CoordinateSystems", 800, 600);
 	MyGlInitLoader();
+	glViewport(0,0, 800, 600);
 
-	glViewport(0, 0, 800, 600);
-
-	Shader shader("transform_03/vert.vs", "transform_03/frag.fs");
+	Shader shader("CoordinateSystems_04/vert.vs", "CoordinateSystems_04/frag.fs");
 
 	GLfloat vertices[] = {
 		//     ---- Î»ÖÃ ----       ---- ÑÕÉ« ----     - ÎÆÀí×ø±ê -
@@ -43,37 +42,33 @@ int main_05()
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GL_FLOAT), (void*)0);
 	glEnableVertexAttribArray(0);
 
-	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GL_FLOAT), (void*)(3 * sizeof(GL_FLOAT)));
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GL_FLOAT), (void *)(3 * sizeof(GL_FLOAT)));
 	glEnableVertexAttribArray(1);
 
-	unsigned int texture;
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GL_FLOAT), (void*)(6 * sizeof(GL_FLOAT)));
+	glEnableVertexAttribArray(2);
+
+	GLuint texture1;
 	glActiveTexture(GL_TEXTURE0);
-	glGenTextures(1, &texture);
-	glBindTexture(GL_TEXTURE_2D, texture);
+	glGenTextures(1, &texture1);
+	glBindTexture(GL_TEXTURE_2D, texture1);
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-
-
 	int width, height, nrChannels;
-	//·ÀÖ¹Í¼Æ¬µßµ¹
-	//stbi_set_flip_vertically_on_load(true);
 	unsigned char* data = stbi_load("background_01.jpg", &width, &height, &nrChannels, 0);
 	if (data)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
 		glGenerateMipmap(GL_TEXTURE_2D);
 	}
-	else
-	{
-		std::cout << "failed to load texutre";
-	}
+
 	stbi_image_free(data);
 
-	unsigned int texture2;
+	GLuint texture2;
 	glGenTextures(1, &texture2);
 	glActiveTexture(GL_TEXTURE1);
 	glBindTexture(GL_TEXTURE_2D, texture2);
@@ -113,7 +108,7 @@ int main_05()
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, texture);
+		glBindTexture(GL_TEXTURE_2D, texture1);
 
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, texture2);
@@ -125,7 +120,7 @@ int main_05()
 		glm::mat4 trans2;
 		trans2 = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
 		trans2 = glm::translate(trans2, glm::vec3(0.5f, 0.5f, 0.0f));
-		
+
 		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans2));
 
 		glBindVertexArray(VAO);
