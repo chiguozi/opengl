@@ -7,9 +7,9 @@
 
 int main_05()
 {
-	MyGlInitGLFW(3);
-	GLFWwindow* window = MyGlCreateWindow("transform", 800, 600);
-	MyGlInitLoader();
+	Tool::MyGlInitGLFW(3);
+	GLFWwindow* window = Tool::MyGlCreateWindow("transform", 800, 600);
+	Tool::MyGlInitLoader();
 
 	glViewport(0, 0, 800, 600);
 
