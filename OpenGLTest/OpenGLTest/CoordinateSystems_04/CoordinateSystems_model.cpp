@@ -148,7 +148,7 @@ int main()
 		shader.use();
 
 		glm::mat4 model;
-		model = glm::rotate(model, (float)glfwGetTime() * -55.0f, glm::vec3(0.5f, 1.0f, 0.0f));
+		model = glm::rotate(model, (float)glfwGetTime() * -55.0f, glm::vec3(1.0f, 0.0f, 0.0f));
 
 		glm::mat4 view;
 		view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
