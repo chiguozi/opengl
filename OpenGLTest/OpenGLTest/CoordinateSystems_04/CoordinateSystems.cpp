@@ -5,7 +5,7 @@
 #include "glm/gtc/type_ptr.hpp"
 #include "../stb_image.h"
 
-int main()
+int main_06_01()
 {
 	Tool::MyGlInitGLFW(3);
 	GLFWwindow* window = Tool::MyGlCreateWindow("CoordinateSystems", 800, 600);
@@ -118,7 +118,7 @@ int main()
 
 
 		glm::mat4 model;
-		model = glm::rotate(model, -55.0f, glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, -30.0f, glm::vec3(1.0f, 0.0f, 0.0f));
 
 		glm::mat4 view;
 		view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
