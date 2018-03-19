@@ -4,6 +4,7 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
 #include "../stb_image.h"
+//#include "Camera.h"
 
 glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
 glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
@@ -15,6 +16,18 @@ float lastY = 300;
 bool firstMouse = false;
 float yaw = -90;
 float pitch = 0;
+float fov = 45;
+
+void ScrollCallback_Camera(GLFWwindow * window, double xoffset, double yoffset)
+{
+	if (fov >= 1.0f && fov <= 45.0f)
+		fov -= yoffset;
+
+	if (fov < 1.0f)
+		fov = 1.0f;
+	if (fov > 45.0f)
+		fov = 45.0f;
+}
 
 
 void MouseCallback_Camera(GLFWwindow * window, double xpos, double ypos)
@@ -84,6 +97,7 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 
 	glfwSetCursorPosCallback(window, MouseCallback_Camera);
+	glfwSetScrollCallback(window, ScrollCallback_Camera);
 	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glm::vec3 cubePositions[] = {
 		glm::vec3(0.0f,  0.0f,  0.0f),
@@ -198,7 +212,7 @@ int main()
 		view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 
 		glm::mat4 projection;
-		projection = glm::perspective(45.0f, (float)800 / (float)600, 0.1f, 100.0f);
+		projection = glm::perspective(fov, (float)800 / (float)600, 0.1f, 100.0f);
 		shader.setMat4("projection", projection);
 
 		for (int i = 0; i < 10; i++)
