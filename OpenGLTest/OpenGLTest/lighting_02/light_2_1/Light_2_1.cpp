@@ -7,7 +7,7 @@
 
 
 
-int main()
+int main_02_01()
 {
 	Tool::MyGlInitGLFW(3);
 	GLFWwindow *window = Tool::MyGlCreateWindow("Light_2_1", 800, 600);
