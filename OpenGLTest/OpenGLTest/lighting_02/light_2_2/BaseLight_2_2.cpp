@@ -8,11 +8,12 @@
 
 int main()
 {
+	float deltaTime, lastFrame = 0;
 	Tool::MyGlInitGLFW(3);
 	GLFWwindow *window = Tool::MyGlCreateWindow("baselight", 800, 600);
 	Tool::MyGlInitLoader();
 
-	glm::vec3 lightPos(0.3f, 0.3f, 2);
+	glm::vec3 lightPos(0.1f, 0.1f, 1.5);
 
 	Shader objectShader("lighting_02/light_2_2/vert.vs", "lighting_02/light_2_2/frag.fs");
 	Shader lightShader("lighting_02/light_2_2/vert.vs", "lighting_02/light_2_2/light.fs");
@@ -89,6 +90,14 @@ int main()
 
 	while (!glfwWindowShouldClose(window))
 	{
+
+		float currentFrame = glfwGetTime();
+		deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
+
+		lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+		lightPos.y = sin(glfwGetTime() / 2.0f) * 1.0f;
+
 		glClearColor(0.2, 0.3, 0.4, 1);
 		glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
