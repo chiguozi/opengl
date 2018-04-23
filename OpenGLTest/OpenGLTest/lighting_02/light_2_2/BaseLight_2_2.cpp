@@ -12,12 +12,12 @@ int main()
 	GLFWwindow *window = Tool::MyGlCreateWindow("baselight", 800, 600);
 	Tool::MyGlInitLoader();
 
-	glm::vec3 lightPos(0.8f, 0.8f, 0);
+	glm::vec3 lightPos(0.3f, 0.3f, 2);
 
 	Shader objectShader("lighting_02/light_2_2/vert.vs", "lighting_02/light_2_2/frag.fs");
 	Shader lightShader("lighting_02/light_2_2/vert.vs", "lighting_02/light_2_2/light.fs");
 
-	Camera camera(glm::vec3(0, 0.2, 3.0f));
+	Camera camera(glm::vec3(0, 0, 3.0f));
 
 	glEnable(GL_DEPTH_TEST);
 
@@ -76,6 +76,9 @@ int main()
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GL_FLOAT), (void *)0);
 	glEnableVertexAttribArray(0);
 
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GL_FLOAT), (void *)(3 * sizeof(GL_FLOAT)));
+	glEnableVertexAttribArray(1);
+
 	GLuint lightVAO;
 	glGenVertexArrays(1, &lightVAO);
 	glBindVertexArray(lightVAO);
@@ -100,8 +103,9 @@ int main()
 
 		objectShader.setVec3("lightColor", glm::vec3(1, 1, 1));
 		objectShader.setVec3("objectColor", glm::vec3(0, 1, 0));
-
+		objectShader.setVec3("lightPos", lightPos);
 		objectShader.setFloat("ambientStrength", 0.3);
+		objectShader.setVec3("viewPos", glm::vec3(0, 0.2, 3.0f));
 
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
