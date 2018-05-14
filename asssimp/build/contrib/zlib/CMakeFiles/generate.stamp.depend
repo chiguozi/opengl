@@ -1,0 +1,17 @@
+# CMake generation dependency list for this directory.
+G:/project/asssimp/contrib/zlib/CMakeLists.txt
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckTypeSize.cmake
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFile.cmake
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFileCXX.cmake
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckFunctionExists.cmake
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFile.cmake
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckCSourceCompiles.cmake
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFile.c.in
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFile.c.in
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFile.c.in
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckTypeSize.c.in
+G:/project/asssimp/build/CMakeFiles/CheckTypeSize/OFF64_T.c
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckFunctionExists.c
+F:/Program Files (x86)/share/cmake-3.10/Modules/CheckIncludeFile.c.in
+G:/project/asssimp/contrib/zlib/zlib.pc.cmakein
+G:/project/asssimp/contrib/zlib/zconf.h.cmakein
