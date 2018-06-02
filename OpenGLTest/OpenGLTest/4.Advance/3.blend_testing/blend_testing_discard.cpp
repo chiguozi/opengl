@@ -29,13 +29,13 @@ float lastFrame = 0.0f;
 int main()
 {
 	Tool::MyGlInitGLFW(3);
-	GLFWwindow *window = Tool::MyGlCreateWindow("blendtest", 1280, 720);
+	GLFWwindow *window = Tool::MyGlCreateWindow("depthtest", 1280, 720);
 	Tool::MyGlInitLoader();
 	glViewport(0, 0, 1280, 720);
 
 	glEnable(GL_DEPTH_TEST);
 
-	Shader shader("4.Advance/3.blend_testing/vert.vs", "4.Advance/3.blend_testing/frag_discard.fs");
+	Shader shader("4.Advance/3.blend_testing/vert.vs", "4.Advance/3.blend_testing/frag.fs");
 
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);

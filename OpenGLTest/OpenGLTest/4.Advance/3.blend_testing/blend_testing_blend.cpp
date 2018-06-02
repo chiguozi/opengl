@@ -29,13 +29,16 @@ float lastFrame = 0.0f;
 int main()
 {
 	Tool::MyGlInitGLFW(3);
-	GLFWwindow *window = Tool::MyGlCreateWindow("blendtest", 1280, 720);
+	GLFWwindow *window = Tool::MyGlCreateWindow("depthtest", 1280, 720);
 	Tool::MyGlInitLoader();
 	glViewport(0, 0, 1280, 720);
 
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	//glBlendFuncSeparate(GL_ONE, GL_ONE, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	Shader shader("4.Advance/3.blend_testing/vert.vs", "4.Advance/3.blend_testing/frag_discard.fs");
+	Shader shader("4.Advance/3.blend_testing/vert.vs", "4.Advance/3.blend_testing/frag.fs");
 
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
@@ -152,11 +155,11 @@ int main()
 
 	unsigned int cubeTexture = Tool::LoadTexture("resources/texture/marble.jpg");
 	unsigned int planeTexture = Tool::LoadTexture("resources/texture/metal.png");
-	unsigned int grassTexture = Tool::LoadTexture("resources/texture/grass.png");
+	unsigned int grassTexture = Tool::LoadTexture("resources/texture/window.png");
 
 	// transparent vegetation locations
 	// --------------------------------
-	vector<glm::vec3> vegetation
+	vector<glm::vec3> windows
 	{
 		glm::vec3(-1.5f, 0.0f, -0.48f),
 		glm::vec3(1.5f, 0.0f, 0.51f),
@@ -177,6 +180,15 @@ int main()
 		// input
 		// -----
 		processInput(window);
+
+		// sort the transparent windows before rendering
+		// ---------------------------------------------
+		std::map<float, glm::vec3> sorted;
+		for (unsigned int i = 0; i < windows.size(); i++)
+		{
+			float distance = glm::length(camera.Position - windows[i]);
+			sorted[distance] = windows[i];
+		}
 
 
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
@@ -212,10 +224,10 @@ int main()
 		// vegetation
 		glBindVertexArray(transparentVAO);
 		glBindTexture(GL_TEXTURE_2D, grassTexture);
-		for (GLuint i = 0; i < vegetation.size(); i++)
+		for (std::map<float, glm::vec3>::reverse_iterator it = sorted.rbegin(); it != sorted.rend(); ++it)
 		{
 			model = glm::mat4();
-			model = glm::translate(model, vegetation[i]);
+			model = glm::translate(model, it->second);
 			shader.setMat4("model", model);
 			glDrawArrays(GL_TRIANGLES, 0, 6);
 		}
