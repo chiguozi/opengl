@@ -34,7 +34,7 @@ int main()
 	glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
 
 	Shader shader("4.Advance/5.framebuffer_test/vert.vs", "4.Advance/5.framebuffer_test/frag.fs");
-	Shader screenShader("4.Advance/5.framebuffer_test/screen.vs", "4.Advance/5.framebuffer_test/screen_gray.fs");
+	Shader screenShader("4.Advance/5.framebuffer_test/screen.vs", "4.Advance/5.framebuffer_test/screen_blur.fs");
 
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
